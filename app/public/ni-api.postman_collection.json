@@ -1,0 +1,106 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ni-api",
+		"_postman_id": "c2d61d4c-53f8-0bd5-4f9d-5fe733f27244",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"url": "http://localhost:8080/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"url": "http://localhost:8080/auth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"mac94@moen.com\",\n\t\"password\":\"secret\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"url": "http://localhost:8080/logout",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail",
+			"request": {
+				"url": "http://localhost:8080/user",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Products",
+			"request": {
+				"url": "http://localhost:8080/user/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Products to User",
+			"request": {
+				"url": "http://localhost:8080/user/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sku\":\"maschine\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Products from User",
+			"request": {
+				"url": "http://localhost:8080/user/products/una-corda",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
